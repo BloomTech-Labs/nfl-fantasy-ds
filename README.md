@@ -81,7 +81,7 @@ You can find the data API at [https://nfl-perfect-trader.herokuapp.com](https://
 
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
-Please note we have a [code of conduct](./code_of_conduct.md.md). Please follow it in all your interactions with the project.
+Please note we have a [code of conduct](https://github.com/Lambda-School-Labs/nfl-fantasy-ds/blob/master/code_of_conduct.md). Please follow it in all your interactions with the project.
 
 ### Issue/Bug Request
 
