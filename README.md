@@ -12,28 +12,20 @@ You can find the project at [https://nfl-perfect-trader.herokuapp.com](https://n
 | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/jimkinghomes/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) |
 
 
-
-🚫 5️⃣ Optional examples of using images with links for your tech stack, make sure to change these to fit your project
-
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![Typescript](https://img.shields.io/npm/types/typescript.svg?style=flat)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b5c4db1c-b10d-42c3-b157-3746edd9e81d/deploy-status)](netlify link goes in these parenthesis)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 🚫 more info on using badges [here](https://github.com/badges/shields)
 
 ## Project Overview
 
 
-1️⃣ [Trello Board](🚫add link to trello board here)
+[Trello Board](https://trello.com/b/GR22EAEc/nfl-fantasy-perfect-trade)
 
-1️⃣ [Product Canvas](🚫add link to product canvas here)
+[Product Canvas](https://www.notion.so/NFL-Fantasy-Perfect-Trade-881bd44def114fda8cffd8ccc362caf0)
 
-🚫 Replace lorem ipsum with a description of your project
+NFL Fantasy Perfect Trade
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+An application to help fantasy football fans analyze potential player trades, make the optimal trades and win their fantasy football league competitions.
 
 🚫  delete if front end is not applicable to your project
 
@@ -45,7 +37,13 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 ### 2️⃣ Predictions
 
-🚫 Describe your models here
+Multiple models are employed to predict fantasy football points for each player, each week during the 2019 NFL season.
+
+For NFL defenses an ARIMA model is used as there are 18-20 seasons of weekly game data (288 - 320 data points in a time series).
+
+For rookie players, there are no pro data points, so for week 1 of the 2019 season an XGBoost model is used using background data for the player including combine data (e.g. 40 yard dash, bench press, etc.), biometric data (height and weight), college data (college and division), and draft position.  After week 1, rookie predictions are based on a simple average of actual points.
+
+For non-rookie players, an ARIMA model is used for players with 4+ years of data (49+ data points in a time series).  Since an ARIMA model does not work well with fewer than 50 data points, an average of actual points is used for non-rookie players with 3 or fewer seasons of data.
 
 ### 2️⃣ Explanatory Variables
 
