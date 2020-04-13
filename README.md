@@ -5,7 +5,7 @@ You can find the project at [https://nfl-perfect-trader.herokuapp.com](https://n
 
 ## Contributors
 
-|                                       [Jim King](https://github.com/JimKing100)                                        |                                       [Student 2](https://github.com/)                                        |
+|                                       [Jim King](https://github.com/JimKing100)                                        |                                       [Enkhzorig Batsaikhan](https://github.com/ezorigo)                                        |
 | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | 
 |                      [<img src="https://github.com/Lambda-School-Labs/nfl-fantasy-ds/blob/master/images/Jim%20King-PacUnion-Color-Web.jpg" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |
 |                 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/)                 |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/JimKing100)             |  
