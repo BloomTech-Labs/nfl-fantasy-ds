@@ -35,7 +35,7 @@ An application to help fantasy football fans analyze potential player trades, ma
 
 🚫 List all of the languages, frameworks, services, etc used here.
 
-### 2️⃣ Predictions
+### Predictions
 
 Multiple models are employed to predict fantasy football points for each player, each week during the 2019 NFL season.
 
@@ -54,18 +54,14 @@ For non-rookie players, an ARIMA model is used for players with 4+ years of data
 -   Explanatory Variable 5
 
 ### Data Sources
-🚫  Add to or delete souce links as needed for your project
 
+All the raw data was acquired from ArmchairAnalysis.com
 
--   [Source 1] (🚫add link to python notebook here)
--   [Source 2] (🚫add link to python notebook here)
--   [Source 3] (🚫add link to python notebook here)
--   [Source 4] (🚫add link to python notebook here)
--   [Source 5] (🚫add link to python notebook here)
+-   [ArmchairAnalysis.com] (https://www.armchairanalysis.com)
 
 ### Python Notebooks
 
-🚫  Add to or delete python notebook links as needed for your project
+See the repo directories for the Python Notebooks.
 
 [Python Notebook 1](🚫add link to python notebook here)
 
@@ -79,7 +75,7 @@ For non-rookie players, an ARIMA model is used for players with 4+ years of data
 
 ### 3️⃣ How to connect to the data API
 
-🚫 List directions on how to connect to the API here
+You can find the data API at [https://nfl-perfect-trader.herokuapp.com](https://nfl-perfect-trader.herokuapp.com/api/trade/?player0_id=23&player1_id=49&week=1).
 
 ## Contributing
 
