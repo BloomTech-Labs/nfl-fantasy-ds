@@ -52,10 +52,6 @@ All the raw data was acquired from ArmchairAnalysis.com
 
 See the repo directory [notebooks](https://github.com/Lambda-School-Labs/nfl-fantasy-ds/tree/master/notebooks) for the Python Notebooks.
 
-### 3️⃣ How to connect to the web API
-
-🚫 List directions on how to connect to the API here
-
 ### 3️⃣ How to connect to the data API
 
 You can find the data API at [https://nfl-perfect-trader.herokuapp.com](https://nfl-perfect-trader.herokuapp.com/api/trade/?player0_id=23&player1_id=49&week=1).
