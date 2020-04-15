@@ -26,8 +26,6 @@ NFL Fantasy Perfect Trade
 
 An application to help fantasy football fans analyze potential player trades, make the optimal trades and win their fantasy football league competitions.
 
-🚫  delete if front end is not applicable to your project
-
 1️⃣ [Deployed Front End](🚫add link to deployed app here)
 
 ### Tech Stack
