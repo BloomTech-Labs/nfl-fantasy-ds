@@ -33,7 +33,7 @@ An application to help fantasy football fans analyze potential player trades, ma
 
 ### Tech Stack
 
-🚫 List all of the languages, frameworks, services, etc used here.
+Python, pandas, numpy, statsmodel, sklearn, pmdarima, xgboost, flask
 
 ### Predictions
 
@@ -45,29 +45,15 @@ For rookie players, there are no pro data points, so for week 1 of the 2019 seas
 
 For non-rookie players, an ARIMA model is used for players with 4+ years of data (49+ data points in a time series).  Since an ARIMA model does not work well with fewer than 50 data points, an average of actual points is used for non-rookie players with 3 or fewer seasons of data.
 
-### 2️⃣ Explanatory Variables
-
--   Explanatory Variable 1
--   Explanatory Variable 2
--   Explanatory Variable 3
--   Explanatory Variable 4
--   Explanatory Variable 5
-
 ### Data Sources
 
 All the raw data was acquired from ArmchairAnalysis.com
 
--   [ArmchairAnalysis.com] (https://www.armchairanalysis.com)
+[ArmchairAnalysis.com](https://www.armchairanalysis.com)
 
 ### Python Notebooks
 
-See the repo directories for the Python Notebooks.
-
-[Python Notebook 1](🚫add link to python notebook here)
-
-[Python Notebook 2](🚫add link to python notebook here)
-
-[Python Notebook 3](🚫add link to python notebook here)
+See the repo directory [notebooks](https://github.com/Lambda-School-Labs/nfl-fantasy-ds/tree/master/notebooks) for the Python Notebooks.
 
 ### 3️⃣ How to connect to the web API
 
