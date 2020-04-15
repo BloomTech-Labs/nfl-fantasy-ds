@@ -13,7 +13,7 @@ You can find the project at [https://nfl-perfect-trader.herokuapp.com](https://n
 
 
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![[Maintainability](https://api.codeclimate.com/v1/badges/cdd3afdf63c179c84278/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/nfl-fantasy-ds/maintainability)
+![[Maintainability](https://api.codeclimate.com/v1/badges/cdd3afdf63c179c84278/maintainability)(https://codeclimate.com/github/Lambda-School-Labs/nfl-fantasy-ds/maintainability)
 
 🚫 more info on using badges [here](https://github.com/badges/shields)
 
