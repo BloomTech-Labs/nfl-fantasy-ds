@@ -35,9 +35,10 @@ def create_app():
         player9_id = request.args.get('player9_id')
         week = request.args['week']
 
-        request_args = [player0_id, player1_id]
-        results = week1[week1.index.isin(request_args)]
-        json = results.to_json(orient='table')
+        if week == "1":
+            request_args = [player0_id, player1_id]
+            results = week1[week1.index.isin(request_args)]
+            json = results.to_json(orient='table')
 
         return json
 

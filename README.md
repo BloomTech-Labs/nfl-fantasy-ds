@@ -13,8 +13,7 @@ You can find the project at [https://nfl-perfect-trader.herokuapp.com](https://n
 
 
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
-
-🚫 more info on using badges [here](https://github.com/badges/shields)
+[![Maintainability](https://api.codeclimate.com/v1/badges/cdd3afdf63c179c84278/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/nfl-fantasy-ds/maintainability)
 
 ## Project Overview
 
@@ -27,13 +26,11 @@ NFL Fantasy Perfect Trade
 
 An application to help fantasy football fans analyze potential player trades, make the optimal trades and win their fantasy football league competitions.
 
-🚫  delete if front end is not applicable to your project
-
 1️⃣ [Deployed Front End](🚫add link to deployed app here)
 
 ### Tech Stack
 
-🚫 List all of the languages, frameworks, services, etc used here.
+Python, pandas, numpy, statsmodel, sklearn, pmdarima, xgboost, flask
 
 ### Predictions
 
@@ -45,33 +42,15 @@ For rookie players, there are no pro data points, so for week 1 of the 2019 seas
 
 For non-rookie players, an ARIMA model is used for players with 4+ years of data (49+ data points in a time series).  Since an ARIMA model does not work well with fewer than 50 data points, an average of actual points is used for non-rookie players with 3 or fewer seasons of data.
 
-### 2️⃣ Explanatory Variables
-
--   Explanatory Variable 1
--   Explanatory Variable 2
--   Explanatory Variable 3
--   Explanatory Variable 4
--   Explanatory Variable 5
-
 ### Data Sources
 
 All the raw data was acquired from ArmchairAnalysis.com
 
--   [ArmchairAnalysis.com] (https://www.armchairanalysis.com)
+[ArmchairAnalysis.com](https://www.armchairanalysis.com)
 
 ### Python Notebooks
 
-See the repo directories for the Python Notebooks.
-
-[Python Notebook 1](🚫add link to python notebook here)
-
-[Python Notebook 2](🚫add link to python notebook here)
-
-[Python Notebook 3](🚫add link to python notebook here)
-
-### 3️⃣ How to connect to the web API
-
-🚫 List directions on how to connect to the API here
+See the repo directory [notebooks](https://github.com/Lambda-School-Labs/nfl-fantasy-ds/tree/master/notebooks) for the Python Notebooks.
 
 ### 3️⃣ How to connect to the data API
 
