@@ -1,4 +1,4 @@
-player,first,last,name,position,week1-cur,week1-pred,week1-act,week1-diff,week1-pct,rank-cur,rank-pred,rank-act
+player,first,last,name,position,week1Cur,week1Pred,week1Act,week1Diff,week1Pct,rankCur,rankPred,rankAct
 TG-1950,Todd,Gurley,Todd Gurley,RB,313.1,344,188.40000000000003,156.07953145551838,0.4530879695407169,7.0,1.0,43.0
 SB-0212,Saquon,Barkley,Saquon Barkley,RB,304.8,323,196.1,127.75000000000004,0.3944727497298132,9.0,2.0,36.0
 RW-3850,Russell,Wilson,Russell Wilson,QB,301.42,306,333.64,-26.917142857142835,-0.08775721218782886,10.0,3.0,4.0
