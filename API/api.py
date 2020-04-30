@@ -7,9 +7,9 @@ nfl fantasy football player trades.
 from flask import Flask, request, render_template, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
+from .check_score import *
 from .errors import InvalidUsage
-from .data import data
-from .data import week1
+from .data import *
 
 
 load_dotenv()
@@ -55,6 +55,7 @@ def create_app():
         if week == "1":
             request_args = [player0_id, player1_id]
             results = week1[week1.index.isin(request_args)]
+            results = check_and_add(results)
             json = results.to_json(orient='table')
         
         return json
