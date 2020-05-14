@@ -40,7 +40,9 @@ For NFL defenses an ARIMA model is used as there are 18-20 seasons of weekly gam
 
 For rookie players, there are no pro data points, so for week 1 of the 2019 season an XGBoost model is used using background data for the player including combine data (e.g. 40 yard dash, bench press, etc.), biometric data (height and weight), college data (college and division), and draft position.  After week 1, rookie predictions are based on a simple average of actual points.
 
-For non-rookie players, an ARIMA model is used for players with 4+ years of data (49+ data points in a time series).  Since an ARIMA model does not work well with fewer than 50 data points, an average of actual points is used for non-rookie players with 3 or fewer seasons of data.
+For non-rookie players, an ARIMA model was initially used for players with 4+ years of data (49+ data points in a time series).  Since an ARIMA model does not work well with fewer than 50 data points, an average of actual points is used for non-rookie players with 3 or fewer seasons of data.
+
+Ultimately a Recurrent Neural Network (RNN), LSTM model was used for the non-rookie players with 4+ years of data as it significantly outperformed the ARIMA model.
 
 ### Data Sources
 
