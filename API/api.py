@@ -31,32 +31,13 @@ def create_app():
         """
         player0_id = request.args.get('player0_id')
         player1_id = request.args.get('player1_id')
-        player2_id = request.args.get('player2_id')
-        player3_id = request.args.get('player3_id')
-        player4_id = request.args.get('player4_id')
-        player5_id = request.args.get('player5_id')
-        player6_id = request.args.get('player6_id')
-        player7_id = request.args.get('player7_id')
-        player8_id = request.args.get('player8_id')
-        player9_id = request.args.get('player9_id')
         week = request.args.get('week')
-
-        if request.method == 'GET':
-            if not 'player0_id' in request.args:
-                raise InvalidUsage(message = "request argument 'player0_id=' missing")
-            if not 'player1_id' in request.args:
-                raise InvalidUsage(message = "request argument 'player1_id=' missing")
-            if not 'week' in request.args:
-                raise InvalidUsage(message = "request argument 'week=' missing")
-            if 'week' in request.args:
-                if week != "1":
-                    raise InvalidUsage(message = "only week 1 predictions available")
-
-        if week == "1":
-            request_args = [player0_id, player1_id]
-            results = week1[week1.index.isin(request_args)]
-            results = check_and_add(results)
-            json = results.to_json(orient='table')
+        
+        df = preds.get('predictions-week{}'.format(week))
+        request_args = [player0_id, player1_id]
+        results = df[df.index.isin(request_args)]
+        results = check_and_add(results)
+        json = results.to_json(orient='table')
         
         return json
 

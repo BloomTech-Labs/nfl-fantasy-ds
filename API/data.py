@@ -3,10 +3,19 @@ Reads in data from csv into pandas dataframes
 """
 
 
-import pandas as pd 
+import pandas as pd
+import glob
 
-data = pd.read_csv('data-production/players_full1.csv')
-data = data.set_index('player')
 
-week1 = pd.read_csv('data-production/predictions-week1.csv')
-week1 = week1.set_index('player')
+# read all csv data into a python dictionary
+
+preds = {}
+
+for filename in glob.glob('./data/combined-predictions/*.csv'):
+    if "predictions" in filename:
+        preds[filename[28:-4]] = pd.read_csv(filename,
+                                            header=0,
+                                            index_col='player',
+                                            names=['player', 'first', 'last', 'name', 'position', 'week-cur',
+                                                   'week-pred', 'week-act', 'week-diff', 'week-pct', 'rank-cur',
+                                                   'rank-pred', 'rank-act'])
