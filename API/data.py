@@ -11,7 +11,7 @@ import glob
 
 preds = {}
 
-for filename in glob.glob('./data/combined-predictions/*.csv'):
+for filename in glob.glob('data-production/*.csv'):
     if "predictions" in filename:
         preds[filename[28:-4]] = pd.read_csv(filename,
                                             header=0,

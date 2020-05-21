@@ -29,13 +29,13 @@ def create_app():
         """
         API main route, takes in player IDs and returns predictions
         """
-        player0_id = request.args.get('player0_id')
-        player1_id = request.args.get('player1_id')
+        player0_name = request.args.get('player0_id')
+        player1_name = request.args.get('player1_id')
         week = request.args.get('week')
         
-        df = preds.get('predictions-week{}'.format(week))
-        request_args = [player0_id, player1_id]
-        results = df[df.index.isin(request_args)]
+        df = preds.get('week{}'.format(week))
+        request_args = [player0_name, player1_name]
+        results = df.loc[df['name'].isin(request_args)]
         results = check_and_add(results)
         json = results.to_json(orient='table')
         
