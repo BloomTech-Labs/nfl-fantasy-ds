@@ -1,4 +1,4 @@
-player,first,last,name,position,week1-cur,week1Pred,week1-act,week1-diff,week1-pct,rank-cur,rankPred,rank-act
+player,first,last,name,position,week1Cur,week1Pred,week1Act,week1Diff,week1Pct,rankCur,rankPred,rankAct
 SB-0212,Saquon,Barkley,Saquon Barkley,RB,304.8,323,196.1,127.75000000000004,0.3944727497298132,9.0,1.0,36.0
 RW-3850,Russell,Wilson,Russell Wilson,QB,301.42,310,333.64,-22.906920733451894,-0.07371896415895345,10.0,2.0,4.0
 DP-2037,Dak,Prescott,Dak Prescott,QB,290.9000000000001,299,344.74,-45.667499999999905,-0.15269708849860786,12.0,3.0,3.0
