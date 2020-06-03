@@ -16,6 +16,6 @@ for filename in glob.glob('./data/combined-predictions/*.csv'):
         preds[filename[28:-4]] = pd.read_csv(filename,
                                             header=0,
                                             index_col='player',
-                                            names=['player', 'first', 'last', 'name', 'position', 'week-cur',
-                                                   'week-pred', 'week-act', 'week-diff', 'week-pct', 'rank-cur',
-                                                   'rank-pred', 'rank-act'])
+                                            names=['player', 'first', 'last', 'name', 'position', 'weekCur',
+                                                   'weekPred', 'weekAct', 'weekDiff', 'weekPct', 'rankCur',
+                                                   'rankPred', 'rankAct'])
